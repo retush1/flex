@@ -1,0 +1,206 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* header{ */
+    /* margin: 44px auto;
+    max-width: 85%;
+    display: flex;
+    /* -ms-align-items: center; */
+    /*align-items: center; */
+
+    /* padding-top: 22px;
+    padding-bottom: 20px; */
+
+/* } */
+.eternal{
+    display: flex;
+    /* -ms-align-items: center; */
+    align-items: center;
+width: 99%;
+    height: 80px;
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0%);
+    transition: background-color .3s linear;
+    background-color: rgb(24 11 11 / 50%)
+}
+.main-container{
+    width: 100%;
+    height: 80px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    list-style-type: none; /*убрать точечки*/
+
+    font-weight: bold;
+    transition: color 0.5s ease;
+  
+}
+.logo{
+    /* display: inline-block; */
+    max-width: 80px;
+    /* margin-right: 50px; */
+    /* margin-left: 15px; */
+    vertical-align: middle;
+}
+
+/* .menu-list{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+    /* font-size: 20px;
+    text-transform: uppercase;
+
+    list-style-type: none; /*убрать точечки  
+} */
+
+.menu-list li{
+    display: inline-block;
+    margin-right: 55px; /*растояние между словами*/
+
+}
+.menu-list li a{
+    display: block;
+    text-decoration: none; /*убрать подчеркивание*/
+    color: turquoise;
+
+}
+.menu-list li a:hover{ /*при наведении*/
+    color: rgb(18, 74, 158);
+    font-size: 17px;
+}
+.btn-call{
+    box-sizing: content-box;
+    width: 15%;
+
+
+    align-items: center;
+    font-size: 18px;
+    background-color: rgb(170, 140, 170);
+    color: black;
+    border-radius: 10px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}   
+.btn-call:hover{
+    background-color: burlywood;
+
+}
+.btn-call:active{
+    background-color: crimson;
+}
+
+.service{
+    background-image: url(/MyProject/imgP/bg-servises.jpg);
+   
+}
+.headService{
+    font-size: 30px;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 15px;
+}
+.card{
+    margin-bottom: 30px;
+          /* max-height: 100%; */
+    border-bottom: 2px solid #220303;
+    background: rgb(82, 53, 53) !important;
+}   
+.card:hover{
+    color: rgb(243, 239, 239);
+    margin: 5px;
+    transition: filter 0,5s linear;
+    filter: brightness(1) grayscale(2) opacity(0.5);
+}
+.card-title{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(27, 20, 92);
+}
+.card-img-top{
+    max-height: 300px;
+}
+
+.card-body p{
+    text-align: center;
+    font-size: 16px;
+    color: burlywood;
+}
+.ritual{
+    background-image: url(/MyProject/imgP/bg-ritual.jpg);
+ 
+/* background-size: 100% auto; */
+}
+.ritual-container {
+    overflow: hidden;
+    position: relative;
+}
+.ritual-container li {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+.ritual-container li a {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+.ritual-container li a img {
+    max-width: none;
+    height: 500px; /* Высота фотографий */
+}
+.ritual-container li span.overlay {
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.vid-rituala{
+    position: absolute;
+    font-weight: bold;
+    color: rgb(212, 208, 228);
+    left: 80px;
+    bottom: 80px;
+    width: calc(100% - 160px);
+    font-size: 30px;
+    margin: 0;  
+
+    transition: 1s; /* Время эффекта */
+    text-align: center;
+}
+.vid-rituala:hover{
+    color: burlywood;
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+/* @media (min-width: 576px) and (max-width: 1199.98px){
+.main-container,
+.btn-call{
+    font-size: 10px;
+}
+}
+@media (min-width: 299px) and (max-width: 575px){
+    .main-container,
+.btn-call{
+    font-size: 6px;
+} */
+/* @font-face {
+    font-family: "BoormanOld";
+    src: url("/MyProject/fonts/ofont.ru_Bookman\ Old\ Style\ Cyr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+} */
