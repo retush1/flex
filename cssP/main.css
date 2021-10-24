@@ -158,7 +158,7 @@ width: 99%;
 }
 
 .service{
-    background-image: url(/imgP/bg-servises.jpg);
+    background-image: url(../imgP/bg-servises.jpg);
    
 }
 .headService{
@@ -195,7 +195,7 @@ width: 99%;
     color: burlywood;
 }
 .ritual{
-    background-image: url(/imgP/bg-rit2.jpg);
+    background-image: url(../imgP/bg-rit2.jpg);
  
 background-size: 100% auto;
 }
@@ -253,7 +253,7 @@ background-size: 100% auto;
 }
 
 .product{
-    background-image: url(/imgP/bg-product.jpg);
+    background-image: url(../imgP/bg-product.jpg);
     padding-bottom: 5rem;
 }
 .wave_inner {
@@ -299,7 +299,7 @@ background-size: 100% auto;
     transform: rotate(45deg);
 }
 .wave:before {
-    content: url(/imgP/derjatel.png);
+    content: url(../imgP/derjatel.png);
     position: absolute;
     top: -45px;
     left: 48%;
