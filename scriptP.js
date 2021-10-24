@@ -25,3 +25,47 @@ $(function(){
         $(this).find("span.overlay").fadeIn();
     });    
 });    
+
+const important = document.getElementById("carouselExampleCaptions");
+const service = document.getElementById("myService");
+const ritual = document.getElementById("myRitual");
+const product = document.getElementById("myProduct");
+const footerSite = document.getElementById("endSite");
+
+const linkImportant = document.querySelector("[href='#carouselExampleCaptions']");
+const linkService = document.querySelector("[href='#myService']");
+const linkRitual = document.querySelector("[href='#myRitual']");
+const linkProduct = document.querySelector("[href='#myProduct']");
+const linkFooter = document.querySelector("[href='#endSite']");
+
+
+linkImportant.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+  });
+  
+  linkService.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(0, important.offsetHeight);
+  });
+  
+  linkRitual.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(0, important.offsetHeight + service.offsetHeight);
+  });
+  
+  linkProduct.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(
+      0,
+      important.offsetHeight + service.offsetHeight + ritual.offsetHeight
+    );
+  });
+  
+  linkFooter.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo(
+      0,
+      important.offsetHeight + service.offsetHeight + ritual.offsetHeight +  product.offsetHeight);
+  });
+  

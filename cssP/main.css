@@ -14,9 +14,40 @@ body{
     padding-bottom: 20px; */
 
 /* } */
-.eternal{
+.navbar{
+    padding-top: 5rem; 
+    padding-bottom: 0;
+}
+.container-fluid{
     display: flex;
-    /* -ms-align-items: center; */
+    position: fixed;
+     /* -ms-align-items: center; */
+    align-items: center;
+
+    height: 80px;
+    z-index: 2000;
+    top: 0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0%);
+    transition: background-color .3s linear;
+    background-color: rgb(14 8 8/ 92%)
+}
+/* .carousel {
+    height: 550px !important;
+}
+.carousel-inner img {
+    height: 550px !important;
+    
+} */
+h5{
+    font-size: 25px;
+    color: rgb(247, 73, 4);
+    font-weight: bold;
+}
+.carousel-caption p{
+    font-size: 22px;
+}
+/* .eternal{
+    display: flex;
     align-items: center;
 width: 99%;
     height: 80px;
@@ -25,7 +56,7 @@ width: 99%;
     top: 0;
     box-shadow: 0 1px 3px rgb(0 0 0 / 0%);
     transition: background-color .3s linear;
-    background-color: rgb(24 11 11 / 50%)
+    background-color: rgb(24 11 11 / 50%) 
 }
 .main-container{
     width: 100%;
@@ -37,19 +68,44 @@ width: 99%;
     text-transform: uppercase;
 
     list-style-type: none; /*убрать точечки*/
-
-    font-weight: bold;
+/*    font-weight: bold;
     transition: color 0.5s ease;
   
-}
+}*/
 .logo{
     /* display: inline-block; */
     max-width: 80px;
-    /* margin-right: 50px; */
-    /* margin-left: 15px; */
+
+    margin-right: 50px; 
+    margin-left: 15px;
     vertical-align: middle;
 }
+.navbar-brand{
+    color: rgba(28, 223, 197, 0.9) !important;
+    font-weight: bold;
+    position: relative;
+    
+}
+.navbar-brand:hover{
+    color: rgb(5, 194, 252) !important;
+    font-size: 22px;
+}
 
+.nav-link{
+    color: rgba(28, 223, 197, 0.9) !important;
+    font-weight: bold;
+    font-size: 1.25rem;
+     
+}
+.nav-link:hover{
+    color: rgb(5, 194, 252) !important;
+    font-size: 22px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {padding-left: 5rem;
+}
+.navbar-toggler {
+    background-color: rgb(35, 163, 202);
+}
 /* .menu-list{
     /* display: flex; */
     /* justify-content: space-between; */
@@ -90,7 +146,7 @@ width: 99%;
     text-decoration: none;
     text-align: center;
     padding: 15px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     margin-right: 15px;
 }   
 .btn-call:hover{
@@ -102,7 +158,7 @@ width: 99%;
 }
 
 .service{
-    background-image: url(/MyProject/imgP/bg-servises.jpg);
+    background-image: url(/imgP/bg-servises.jpg);
    
 }
 .headService{
@@ -115,7 +171,7 @@ width: 99%;
     margin-bottom: 30px;
           /* max-height: 100%; */
     border-bottom: 2px solid #220303;
-    background: rgb(82, 53, 53) !important;
+    background: rgb(82, 50, 50) !important;
 }   
 .card:hover{
     color: rgb(243, 239, 239);
@@ -126,7 +182,8 @@ width: 99%;
 .card-title{
     text-align: center;
     font-size: 20px;
-    color: rgb(27, 20, 92);
+    color: rgb(220, 209, 231);
+    
 }
 .card-img-top{
     max-height: 300px;
@@ -138,13 +195,14 @@ width: 99%;
     color: burlywood;
 }
 .ritual{
-    background-image: url(/MyProject/imgP/bg-ritual.jpg);
+    background-image: url(/imgP/bg-rit2.jpg);
  
-/* background-size: 100% auto; */
+background-size: 100% auto;
 }
 .ritual-container {
     overflow: hidden;
     position: relative;
+    padding-bottom: 5rem;
 }
 .ritual-container li {
     float: left;
@@ -172,13 +230,19 @@ width: 99%;
 }
 .vid-rituala{
     position: absolute;
+    display: flex;
+    justify-content: center;
     font-weight: bold;
+    min-height: 75px;
+    align-items: center;
     color: rgb(212, 208, 228);
-    left: 80px;
-    bottom: 80px;
-    width: calc(100% - 160px);
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    /* width: 100%; */
     font-size: 30px;
-    margin: 0;  
+    /* margin: 0;   */
+    background-color: rgb(18 18 18 / 50%) !important;
 
     transition: 1s; /* Время эффекта */
     text-align: center;
@@ -187,20 +251,132 @@ width: 99%;
     color: burlywood;
     transform: scale(1.2); /* Увеличиваем масштаб */
 }
-/* @media (min-width: 576px) and (max-width: 1199.98px){
-.main-container,
-.btn-call{
-    font-size: 10px;
+
+.product{
+    background-image: url(/imgP/bg-product.jpg);
+    padding-bottom: 5rem;
+}
+.wave_inner {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.wave {
+    margin: 20px;
+    animation: wave ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+}
+.wave:hover {
+    animation-play-state: paused;
+}
+.wave img {
+    border: 5px solid #BFE2FF;
+    display: block;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.wave figcaption {
+    text-align: center;
+    background: #BFE2FF;
+    padding: 5px 5px 10px 5px;
+    font-family: Verdana, sans-serif; 
+    font-weight: bold;   
+}
+ .wave:after{
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 2px solid #337AB7;
+    top: -10px; 
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+.wave:before {
+    content: url(/imgP/derjatel.png);
+    position: absolute;
+    top: -45px;
+    left: 48%;
+    display: block;
+    width: 1px;
+    height: 1px;
+    box-shadow: 0px 0px rgba(0,0,0,0);
+    z-index: 16;
+}   
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(41, 40, 37);
+    color: white;
+    text-align: center;
+}
+
+.widget-social{
+    list-style: none;
+    display: inline-block;
+}
+.widget-social li a:hover{
+    color:turquoise;
+    font-size: 20px;
+
+}
+
+
+@keyframes wave {
+    0% { 
+        transform: rotate(3deg); 
+        box-shadow: 6px 8px 22px rgba(0,0,0,0.3), 12px 16px 24px rgba(0,0,0,0.2);
+    }
+    100% { 
+        transform: rotate(-3deg); 
+        box-shadow: -6px 8px 22px rgba(0,0,0,0.3), -12px 16px 24px rgba(0,0,0,0.2);
+    }
+}
+
+@media  (min-width: 576px) and (max-width: 992px){
+    .ritual-container li a img    {
+height: 300px;
+width: 300px;
+
+    }
+}
+@media  (min-width: 576px) and (max-width: 992px){
+    .vid-rituala{
+      font-size: 15px;  
+      min-height: 70px;
+     
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 575px){
+    .ritual-container li a img    {
+        height: 150%;
+        width: 150%;
+    }
+}
+@media  (min-width: 320px) and (max-width: 575px){
+    .vid-rituala{
+        font-size: 12px;  
+        min-height: 50px;
+       
+      }
+}
+@media  (min-width: 320px) and (max-width: 575px){
+    .ritual-container{
+        height: 200px;
+        min-width: 60%200px;
+    }
+}
+@media  (min-width: 320px) and (max-width: 575px){
+.ritual-container li span.overlay{
+height: 200px;
+width: 200px;
 }
 }
-@media (min-width: 299px) and (max-width: 575px){
-    .main-container,
-.btn-call{
-    font-size: 6px;
-} */
-/* @font-face {
-    font-family: "BoormanOld";
-    src: url("/MyProject/fonts/ofont.ru_Bookman\ Old\ Style\ Cyr.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-} */
